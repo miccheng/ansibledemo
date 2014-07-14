@@ -1,0 +1,6 @@
+---
+- name: install webserver
+  yum: name=httpd state=installed
+
+- name: start httpd service
+  service: name=httpd state=started enabled=yes
