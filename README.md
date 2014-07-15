@@ -1,6 +1,6 @@
 # Vagrant + Ansible Demo #
 
-## 1. Vagrant
+## Vagrant
 
 1. Start Vagrant
 
@@ -90,4 +90,13 @@ ansible-galaxy install rvm_io.rvm1-ruby
 
 	```
 vagrant provision
+```
+---
+
+## Other Tips
+
+* Running Ansible Playbook
+
+	```
+ansible-playbook -i inventory provisioning/devbox.yml
 ```
