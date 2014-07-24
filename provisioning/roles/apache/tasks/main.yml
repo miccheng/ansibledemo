@@ -4,3 +4,6 @@
 
 - name: start httpd service
   service: name=httpd state=started enabled=yes
+
+- name: Add server hostname
+  lineinfile: dest=/etc/httpd/conf/httpd.conf regexp=^ServerName line="ServerName lolserver"

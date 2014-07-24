@@ -6,3 +6,6 @@
   roles:
     - apache
     # - { role: rvm_io.rvm1-ruby, tags: ruby }
+  tasks:
+    - name: just saying hi
+      shell: echo "Hello {{yourname}}!"
